@@ -14,6 +14,7 @@ Here are set of logic and mathematical problems (PART 1) - solved using Kotlin .
 - [Metro Line](#metro-line)
 - [Isosceles Triangle](#isosceles-triangle)
 - [Author Info](#author-info)
+- [Online Kotlin Compiler to test code](#online-kotlin-compiler-to-test-code)
 
 ---
 
@@ -342,6 +343,10 @@ fun main(args: Array<String>) {
 [Back To The Top](#competitive-programming-problem-solving)
 
 ---
+
+## Online Kotlin Compiler to test code
+
+> https://play.kotlinlang.org/
 
 ## Author Info
 
