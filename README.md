@@ -51,7 +51,7 @@ If it is not possible to reach E from S, output -1.
 ###    Sample test cases
 
 (Input):
-
+```sh
 3
 
 5 3 1 5 2 3
@@ -83,10 +83,11 @@ If it is not possible to reach E from S, output -1.
 3 3 4 5
 
 2 4 5
-
+```
 (Output):
-
+```sh
 14 , -1 , 11
+```
 
 [Back To The Top](#competitive-programming-problem-solving)
 
