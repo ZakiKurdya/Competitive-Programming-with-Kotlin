@@ -13,8 +13,9 @@ Here are set of logic and mathematical problems (PART 1) - solved using Kotlin .
 
 - [Metro Line](#metro-line)
 - [Isosceles Triangle](#isosceles-triangle)
-- [Author Info](#author-info)
+- [Car Collision](#car_collision)
 - [Online Kotlin Compiler to test code](#online-kotlin-compiler-to-test-code)
+- [Author Info](#author-info)
 
 ---
 
@@ -36,19 +37,19 @@ Note that there's a constant flow of trains on each line, Le, when a train leave
 
 ###    Input
 
-The first line contains an integer T — The number of test cases.
-The first line in each test case contains 6 integers n, m, S. E x, y, denoting:
+The first line contains an integer T — `The number of test cases`.
+The first line in each test case contains `6 integers n, m, S. E x, y`, denoting:
 the number of stations, the number of lines, the start station, the end station, the time taken between two consecutive stations on the 
 same line and the time taken doing a transition at any station respectively.
-(2 <= n <= 1000, 1 <= m <= 1000, 1 <= S,E <= n, 1 <= x,y <= 10^9).
+`(2 <= n <= 1000, 1 <= m <= 1000, 1 <= S,E <= n, 1 <= x,y <= 10^9)`.
 The following m lines describe the metro lines.
-The ith line starts with an integer Li - The number of stations on line i (1 <= Li <= n).
+The ith line starts with an integer Li - `The number of stations on line i (1 <= Li <= n)`.
 followed by Li integers, representing the sequence of stations in order on the line.
 
 ###    Output
 
 For each test case, output one integer — The minimum time to travel from S to E.
-If it is not possible to reach E from S, output -1.
+If it is not possible to reach E from S, `output -1`.
 
 ###    Sample test cases
 
@@ -340,6 +341,89 @@ fun main(args: Array<String>) {
 // By Dev.Zaki
 ```
 
+[Back To The Top](#competitive-programming-problem-solving)
+
+---
+
+## Car Collision
+
+###    Problem Description
+
+Two car are parking on an infinite road. `The first car is always behind the second car`.
+Both cars simultaneously accelerate instantly to `x meters per minute for the first car`, `y meters per minute for the second car`. The initial distance between the cars is `z` meters. Both cars move without stopping.
+
+Given the integers x and y and z. Will the cars ever collide?
+
+If the cars collide output the minute rounded up on which they will collide. Otherwise `output −1`.
+
+###    Input
+
+The only line of input contains 3 integers x , y and z `(1 ≤ x,y ≤ 10^3) (1 ≤ z ≤ 10^5)`.
+
+###    Output
+
+Output `the minute` on which the cars collide. Otherwise `print −1`.
+
+###    Sample test cases
+
+(Input1):
+```sh
+8 7 5
+```
+>(Output1):
+```sh
+5
+```
+(Input2):
+```sh
+5 10 7
+```
+>(Output2):
+```sh
+-1
+```
+
+###    Soultion ✨
+
+```kotlin
+import java.util.*
+
+fun main(args: Array<String>) {
+    val scan = Scanner(System.`in`)
+    val X =  scan.nextInt()
+    val Y =  scan.nextInt()
+    val Z =  scan.nextInt()
+    val case = solve(X, Y, Z)
+    print(case)
+}
+
+fun solve(X:Int , Y:Int , Z:Int):Int {
+    val Z1 = Z
+    var X2 = X
+    var Y3 = Y
+    var th = 0
+    if (X2 > Y3) {
+        Y3 += Z1
+        for (t in 2..Z1) {
+            X2 += X
+            Y3 += Y
+            if (X2 == Y3) {
+                th = t
+                break
+            }
+            else if(X2 >Y3){
+                th = t
+                break
+            }
+        }
+    } else{
+        return -1
+    }
+    return th
+}
+
+// By Dev.Zaki
+```
 [Back To The Top](#competitive-programming-problem-solving)
 
 ---
