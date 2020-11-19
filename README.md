@@ -13,7 +13,7 @@ Here are set of logic and mathematical problems (PART 1) - solved using Kotlin .
 
 - [Metro Line](#metro-line)
 - [Isosceles Triangle](#isosceles-triangle)
-- [Car Collision](#car_collision)
+- [Car Collision](#car-collision)
 - [Online Kotlin Compiler to test code](#online-kotlin-compiler-to-test-code)
 - [Author Info](#author-info)
 
