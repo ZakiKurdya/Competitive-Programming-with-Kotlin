@@ -1,27 +1,19 @@
 
-# Competitive-programming-problem-solving
+# Competitive Programming with Kotlin
 
-<p align="center">
-Here are set of logic and mathematical problems (PART 1) - solved using Kotlin ..
+<img src="https://logos-download.com/wp-content/uploads/2016/10/Kotlin_logo_wordmark.png" width="400"/>
 
-
-![Project Image](https://logos-download.com/wp-content/uploads/2016/10/Kotlin_logo_wordmark.png)
-
----
-
-### Table of Problems
+### Table of Problems:
 
 - [Metro Line](#metro-line)
 - [Isosceles Triangle](#isosceles-triangle)
 - [Car Collision](#car-collision)
-- [Online Kotlin Compiler to test code](#online-kotlin-compiler-to-test-code)
-- [Author Info](#author-info)
 
 ---
 
 ## Metro Line
 
-###    Problem Description
+### Problem Description
 
 There are n stations numbered from 1 to n, and m metro lines numbered from 1 to m Each line is represented by a sequence of distinct station,
 (you can not have a cycle in a single line), and a single stations can belong to multiple lines.
@@ -240,16 +232,13 @@ class Graph(
         }
     }
 }
-
-// By Dev.Zaki
 ```
-[Back To The Top](#competitive-programming-problem-solving)
 
 ---
 
 ## Isosceles Triangle
 
-###    Problem Description
+### Problem Description
 
 An Isosceles triangle is placed on X Y plane, such that its vertex angle lies on the Y-axis
 initially at `point (0, h)` and its base angles lie on the X-axis, initially `at points (-a , 0) and (a, 0)`,
@@ -337,17 +326,13 @@ fun main(args: Array<String>) {
     }
 }
 
-
-// By Dev.Zaki
 ```
-
-[Back To The Top](#competitive-programming-problem-solving)
 
 ---
 
 ## Car Collision
 
-###    Problem Description
+###  Problem Description
 
 Two car are parking on an infinite road. `The first car is always behind the second car`.
 Both cars simultaneously accelerate instantly to `x meters per minute for the first car`, `y meters per minute for the second car`. The initial distance between the cars is `z` meters. Both cars move without stopping.
@@ -383,7 +368,7 @@ Output `the minute` on which the cars collide. Otherwise `print −1`.
 -1
 ```
 
-###    Soultion ✨
+###  Soultion ✨
 
 ```kotlin
 import java.util.*
@@ -422,18 +407,10 @@ fun solve(X:Int , Y:Int , Z:Int):Int {
     return th
 }
 
-// By Dev.Zaki
 ```
-[Back To The Top](#competitive-programming-problem-solving)
 
 ---
 
-## Online Kotlin Compiler to test code
+## Online Kotlin Compiler to test your code
 
 > https://play.kotlinlang.org/
-
-## Author Info
-
-- Twitter - [@zaki_kurdya](https://twitter.com/zaki_kurdya)
-
-[Back To The Top](#competitive-programming-problem-solving)
