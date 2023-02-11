@@ -31,5 +31,3 @@ fun main(args: Array<String>) {
         println(count)
     }
 }
-
-// BY DEV.ZAKI
